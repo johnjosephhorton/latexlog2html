@@ -1,8 +1,8 @@
 latexlog2html 
 =============
 
-This is script for turning a LaTeX log file into an more-pleasant-to-read [HTML file](http://dl.dropboxusercontent.com/u/420874/permanent/sample.html).
-It lists all the errors in warnings as an ordered list at the top of the HTML file, with internal hyperlinks to the actual in situ wwarnings and error messages.                                   
+This is script for turning a LaTeX log file into a more-pleasant-to-read [HTML file](http://dl.dropboxusercontent.com/u/420874/permanent/sample.html).
+It lists all the errors and warnings from the log file as ordered lists at the top of the HTML file, with internal hyperlinks to the actual in situ warnings/errors.                                   
 
 How it works
 ------------
@@ -16,10 +16,8 @@ Install
 -------
 Probably the simplest thing to do is just place latexlog2html.py in your `/usr/local/bin` and make it executable (`chmod + x latexlog2html`). 
 
-
 Caveats & Limitations
 ---------------------
-
 Right now, it uses `os.system(BROWSER + 'sample.html')` to open the HTML file. 
 This is a bad idea - consider `python latexlog2html.py --file sample.log --browser sudo rm -rf /;`. 
 The working assumption is that the person using this knows that they are doing and wouldn't do something so foolish. 
@@ -28,7 +26,7 @@ But I'd be more than happy to merge a pull request that did something more sensi
 License 
 -------
 
-    This program is free software: you can redistribute it and/or modify
+	This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
