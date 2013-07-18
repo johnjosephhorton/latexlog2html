@@ -3,6 +3,7 @@ import argparse
 import os 
 import re 
 import sys
+import webbrowser 
 
 HTML_HEADER =  """<html><head> 
  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
@@ -64,8 +65,8 @@ def main():
     html_output = convert_log(args.file, HTML_HEADER)
     g.write(''.join(html_output))
     g.close()
-    os.system(args.browser + " sample.html")   
-
+    #os.system(args.browser + " sample.html")   
+    webbrowser.open(os.path.join(os.getcwd(), "sample.html"))
 
 if __name__ == '__main__':
     main()
