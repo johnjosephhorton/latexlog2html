@@ -1,10 +1,12 @@
 latexlog2html 
 =============
 
-This is script for turning a LaTeX log file into something a little more pleasant to read. 
+This is script for turning a LaTeX log file into an more-pleasant-to-read [HTML file](http://dl.dropboxusercontent.com/u/420874/permanent/sample.html).
+It lists all the errors in warnings as an ordered list at the top of the HTML file, with internal hyperlinks to the actual in situ wwarnings and error messages.                                   
 
 How it works
 ------------
+To create this HTML file, simply run: 
 
 	python latexlog2html.py --file FILE --browser BROWSER 
 	
