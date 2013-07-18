@@ -16,13 +16,6 @@ Install
 -------
 Probably the simplest thing to do is just place latexlog2html.py in your `/usr/local/bin` and make it executable (`chmod + x latexlog2html`). 
 
-Caveats & Limitations
----------------------
-Right now, it uses `os.system(BROWSER + 'sample.html')` to open the HTML file. 
-This is a bad idea - consider `python latexlog2html.py --file sample.log --browser sudo rm -rf /;`. 
-The working assumption is that the person using this knows that they are doing and wouldn't do something so foolish. 
-But I'd be more than happy to merge a pull request that did something more sensible here. 
-
 License 
 -------
 
