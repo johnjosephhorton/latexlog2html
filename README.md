@@ -8,9 +8,9 @@ How it works
 ------------
 To create this HTML file, simply run: 
 
-	python latexlog2html.py --file FILE --browser BROWSER 
+	python latexlog2html.py LOGFILE
 	
-Where `FILE` is the name of the log file and and `BROWSER` is the name of the browser you want to use to display the file e.g., `google-chrome` or `firefox.`
+Where `LOGFILE` is the name of the LaTeX log file. 
 
 Install
 -------

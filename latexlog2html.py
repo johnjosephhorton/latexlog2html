@@ -57,12 +57,11 @@ def convert_log(log_file_name, header_template):
 
 def main():    
     parser = argparse.ArgumentParser(description='Process a LaTeX log file')
-    parser.add_argument("-f", "--file", help = "Log file to parse")
-    parser.add_argument("-b", "--browser", help = "Browser to use to open file")
+    parser.add_argument("logfile", help = "Log file to parse")
     args = parser.parse_args()
 
     g = open("sample.html", "w")
-    html_output = convert_log(args.file, HTML_HEADER)
+    html_output = convert_log(args.logfile, HTML_HEADER)
     g.write(''.join(html_output))
     g.close()
     #os.system(args.browser + " sample.html")   
